@@ -289,8 +289,6 @@ for site in SITES:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
-    refs:
-      - master
     changes:
 %(dependencies)s
   environment:
@@ -328,8 +326,6 @@ for site in SITES:
       - $EXCEPT_DEPLOY_PROD
       - $EXCEPT_DEPLOY_PROD_K8S
   only:
-    refs:
-      - master
     changes:
 %(dependencies)s
   environment:
